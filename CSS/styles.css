@@ -535,9 +535,12 @@ nav ul li a:hover {
 }
 
 .list .item .content{
-    transition: none;
+    transition: none !important;
   }
 
+.list .item .content .name {
+  transition: none !important;
+}
 }
 
 /* SOBRE NOSOTROS */
