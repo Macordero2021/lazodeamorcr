@@ -535,6 +535,7 @@ nav ul li a:hover {
 
 .list .item:nth-child(1) .content,
 .list .item:nth-child(2) .content {
+  top: 50%;
   left: 40px;
   width: 400px;
   padding: 0;
@@ -542,6 +543,7 @@ nav ul li a:hover {
 
 .list .item:nth-child(1) .content .title::before,
 .list .item:nth-child(2) .content .title::before {
+  top: 50%;
   left: 40px;
   width: 100px;
   padding: 0;
