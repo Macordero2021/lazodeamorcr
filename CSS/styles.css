@@ -533,14 +533,17 @@ nav ul li a:hover {
   font-size: 12px;
 }
 
-.list .item:nth-child(1) .content,
-  .list .item:nth-child(2) .content {
-    transform: translateY(-40%);
-    left: 20px;
-    width: 90%;
-    top: 55%;
-    padding: 10px;
-    transition: transform var(--transition-time), top var(--transition-time), left var(--transition-time);
+  .carousel {
+    height: 550px; /* o la altura exacta que ocupa tu contenido */
+    overflow: hidden;
+  }
+  .list {
+    display: flex;
+    transition: transform 1.5s ease;
+  }
+  .item {
+    flex-shrink: 0;
+    width: 100%; /* cada item ocupa 100% del carrusel */
   }
 
 }
