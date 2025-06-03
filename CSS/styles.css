@@ -505,11 +505,22 @@ nav ul li a:hover {
     left: 20px;
   }
 
+
   .arrows {
     position: static;
     justify-content: center;
     margin-top: 10px;
   }
+
+}
+
+/* Estilos específicos para iPhone pequeño (320px) */
+@media (max-width: 468px) {
+  .Hero .carousel .list .item .content .des {
+  width: 100%;
+  font-size: 12px;
+}
+
 }
 
 /* SOBRE NOSOTROS */
