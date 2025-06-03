@@ -534,35 +534,8 @@ nav ul li a:hover {
   transition: none !important;
 }
 
-.list .item:nth-child(1) .content
-.list .item:nth-child(2) .content {
-  transition: none !important;
-}
-
-.list .item:nth-child(1) .content,
-.list .item:nth-child(2) .content {
-  transition: none !important;
-}
-
-.list .item:nth-child(1) .content .title::before,
-.list .item:nth-child(2) .content .title::before {
-  transition: none !important;
-}
-
-.list .item:nth-child(1) .content .title::after,
-.list .item:nth-child(2) .content .title::after {
-  transition: none !important;
-}
-
-.list .item:nth-child(1) .content .name,
-.list .item:nth-child(2) .content .name {
-  transition: none !important;
-}
-
-.list .item:nth-child(1) .content .des,
-.list .item:nth-child(2) .content .des {
-  transition: none !important;
-}
+.list .item .content{
+    transition: none;}
 
 }
 
