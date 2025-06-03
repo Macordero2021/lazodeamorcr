@@ -542,27 +542,16 @@ nav ul li a:hover {
 .list .item:nth-child(1) .content,
 .list .item:nth-child(2) .content {
   transition: none !important;
-  top: 50%;
-  left: 40px;
-  width: 400px;
-  padding: 0;
 }
 
 .list .item:nth-child(1) .content .title::before,
 .list .item:nth-child(2) .content .title::before {
   transition: none !important;
-  top: 50%;
-  left: 40px;
-  width: 100px;
-  padding: 0;
 }
 
 .list .item:nth-child(1) .content .title::after,
 .list .item:nth-child(2) .content .title::after {
   transition: none !important;
-  left: 40px;
-  width: 400px;
-  padding: 0;
 }
 
 .list .item:nth-child(1) .content .name,
