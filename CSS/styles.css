@@ -535,7 +535,8 @@ nav ul li a:hover {
 }
 
 .list .item .content{
-    transition: none;}
+    transition: none;
+  }
 
 }
 
