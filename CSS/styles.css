@@ -534,7 +534,7 @@ nav ul li a:hover {
 }
 
   .carousel {
-    height: 300px !important; /* fuerza altura fija */
+    height: 550px !important; /* fuerza altura fija */
   }
   .item {
     display: flex;
