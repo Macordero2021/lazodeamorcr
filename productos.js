@@ -92,9 +92,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const subcategory = parts.length > 1 ? parts[1] : "";
 
     // Solo incluir subcategoría si existe
-    const subcatText = subcategory ? `, subcategoría ${subcategory}` : "";
+    const subcatText = subcategory ? ` ${subcategory}` : "";
 
-    const mensaje = `Hola, estoy interesado en el producto ${title}${subcatText}, talla ${size}, con precio ${price}.`;
+    const mensaje = `Hola, estoy interesado en ${subcatText} ${title}, talla ${size}, con precio ${price}.`;
     const telefono = "50686819741";
 
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;

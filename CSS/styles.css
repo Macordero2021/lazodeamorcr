@@ -533,21 +533,12 @@ nav ul li a:hover {
   font-size: 12px;
 }
 
-  .carousel {
-    height: 550px !important; /* fuerza altura fija */
-  }
-  .item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  .item .title {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+.list .item:nth-child(1) .content,
+.list .item:nth-child(2) .content {
+  left: 40px;
+  width: 400px;
+  padding: 0;
+}
 
 }
 
