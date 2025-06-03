@@ -325,8 +325,6 @@ nav ul li a:hover {
   display: none;
 }
 
-
-
 .list .item:nth-child(1) .content,
 .list .item:nth-child(2) .content {
   transform: translateY(-50%);
@@ -475,7 +473,6 @@ nav ul li a:hover {
     flex-direction: column;
     height: 500px;
     overflow-x: hidden;
-    
   }
 
   .carousel .list .item {
@@ -485,7 +482,6 @@ nav ul li a:hover {
     left: auto;
     position: absolute;
     transform: scale(0.8);
-    
   }
 
   .carousel .list .item:nth-child(1),
@@ -500,7 +496,6 @@ nav ul li a:hover {
   .list .item .content {
     width: 90%;
     left: 5%;
-    
   }
 
   .list .item:nth-child(1) .content,
@@ -508,8 +503,12 @@ nav ul li a:hover {
     width: 90%;
     padding: 10px;
     left: 20px;
-    bottom: auto;
   }
+
+  .Hero .carousel .list .item .content .des {
+  width:90%;
+  font-size: 12px;
+}
 
   .arrows {
     position: static;
@@ -519,11 +518,10 @@ nav ul li a:hover {
 
 }
 
-
 /* Estilos específicos para iPhone pequeño (320px) */
 @media (max-width: 468px) {
   .Hero .carousel .list .item .content .des {
-  width: 100%;
+  width: 90%;
   font-size: 12px;
 }
 
