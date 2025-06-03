@@ -325,6 +325,10 @@ nav ul li a:hover {
   display: none;
 }
 
+.list .item .content {
+  will-change: transform, top, left;
+}
+
 .list .item:nth-child(1) .content,
 .list .item:nth-child(2) .content {
   transform: translateY(-50%);
@@ -500,9 +504,13 @@ nav ul li a:hover {
 
   .list .item:nth-child(1) .content,
   .list .item:nth-child(2) .content {
-    width: 90%;
-    padding: 10px;
+    transform: translateY(-40%);
     left: 20px;
+    width: 90%;
+    top: 55%;
+    bottom: 0px;
+    padding: 10px;
+    transition: transform var(--transition-time), top var(--transition-time), left var(--transition-time);
   }
 
   .Hero .carousel .list .item .content .des {
@@ -524,6 +532,16 @@ nav ul li a:hover {
   width: 90%;
   font-size: 12px;
 }
+
+.list .item:nth-child(1) .content,
+  .list .item:nth-child(2) .content {
+    transform: translateY(-40%);
+    left: 20px;
+    width: 90%;
+    top: 55%;
+    padding: 10px;
+    transition: transform var(--transition-time), top var(--transition-time), left var(--transition-time);
+  }
 
 }
 

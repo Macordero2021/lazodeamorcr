@@ -78,17 +78,29 @@ document.addEventListener("DOMContentLoaded", function () {
     applyFilters();
 
     document.querySelectorAll(".buy-button").forEach(button => {
-    button.addEventListener("click", function () {
+  button.addEventListener("click", function () {
     const productCard = this.closest(".product-card");
     const title = productCard.querySelector(".product-title").innerText.trim();
     const size = productCard.querySelector(".product-brand").innerText.replace("Talla:", "").trim();
     const price = productCard.querySelector(".product-price").innerText.trim();
 
-    const mensaje = `Hola, estoy interesado en el producto ${title}, talla ${size}, con precio ${price}.`;
-    const telefono = "50686819741"; // tu número real de WhatsApp sin espacios ni signos
+    // Extraer subcategoría de data-info
+    const dataInfo = productCard.getAttribute("data-info").toLowerCase();
+    const parts = dataInfo.split(" ");
+
+    // Suponemos: parts[0] = categoría, parts[1] = subcategoría
+    const subcategory = parts.length > 1 ? parts[1] : "";
+
+    // Solo incluir subcategoría si existe
+    const subcatText = subcategory ? `, subcategoría ${subcategory}` : "";
+
+    const mensaje = `Hola, estoy interesado en el producto ${title}${subcatText}, talla ${size}, con precio ${price}.`;
+    const telefono = "50686819741";
 
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, "_blank");
   });
 });
+
+
 });
