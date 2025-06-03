@@ -521,9 +521,9 @@ nav ul li a:hover {
 
 
 /* Estilos específicos para iPhone pequeño (320px) */
-@media (max-width: 468px) {
+@media (max-width: 460px) {
 
-    .Hero {
+  .Hero {
     flex-direction: column;
     height: 500px;
     overflow-x: hidden;
@@ -550,7 +550,7 @@ nav ul li a:hover {
   }
 
   .list .item .content {
-    width: 90%;
+    width: 80%;
     left: 5%;
     
   }
@@ -568,10 +568,10 @@ nav ul li a:hover {
     justify-content: center;
     margin-top: 10px;
   }
-  
+
   .Hero .carousel .list .item .content .des {
-  width: 100%;
-  font-size: 12px;
+  width: 80%;
+  font-size: 14px;
 }
 
 }
