@@ -565,6 +565,16 @@ nav ul li a:hover {
   padding: 0;
 }
 
+.list .item:nth-child(1) .content .name,
+.list .item:nth-child(2) .content .name {
+  transition: none !important;
+}
+
+.list .item:nth-child(1) .content .des,
+.list .item:nth-child(2) .content .des {
+  transition: none !important;
+}
+
 }
 
 /* SOBRE NOSOTROS */
