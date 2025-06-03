@@ -534,16 +534,19 @@ nav ul li a:hover {
 }
 
   .carousel {
-    height: 550px; /* o la altura exacta que ocupa tu contenido */
-    overflow: hidden;
-  }
-  .list {
-    display: flex;
-    transition: transform 1.5s ease;
+    height: 300px !important; /* fuerza altura fija */
   }
   .item {
-    flex-shrink: 0;
-    width: 100%; /* cada item ocupa 100% del carrusel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .item .title {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
 }
