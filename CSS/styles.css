@@ -533,24 +533,26 @@ nav ul li a:hover {
   font-size: 12px;
 }
 
-  .list .item .content {
-    /* Optimizar para móviles */
-    position: relative;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform;
-    backface-visibility: hidden;
-    transform-style: preserve-3d;
-    transform: translateZ(0);
-    /* Evita animar width y padding aquí si es posible */
-  }
+.list .item:nth-child(1) .content,
+.list .item:nth-child(2) .content {
+  left: 40px;
+  width: 400px;
+  padding: 0;
+}
 
-  .list .item:nth-child(1) .content,
-  .list .item:nth-child(2) .content {
-    /*Solo usa transform para mover */
-    width: 80%; /* Evita animar el ancho */
-    transform: translate(10px, -50%);
-    padding: 0;    /* Mejor evitar animar */
-  }
+.list .item:nth-child(1) .content .title::before,
+.list .item:nth-child(2) .content .title::before {
+  left: 40px;
+  width: 100px;
+  padding: 0;
+}
+
+.list .item:nth-child(1) .content .title::after,
+.list .item:nth-child(2) .content .title::after {
+  left: 40px;
+  width: 400px;
+  padding: 0;
+}
 
 }
 
