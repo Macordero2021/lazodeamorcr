@@ -529,23 +529,39 @@ nav ul li a:hover {
 /* Estilos específicos para iPhone pequeño (320px) */
 @media (max-width: 468px) {
 
-  .item .content{
-    transition: none !important;
+  .list .item .content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none;
+  }
+
+  .list .item:nth-child(1) .content,
+  .list .item:nth-child(2) .content {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    top: 100px;
+  }
+
+  .list .item .content .name,
+  .list .item .content .title,
+  .list .item .content .des {
+    transition: opacity 0.4s ease, transform 0.4s ease;
   }
 
   .Hero .carousel .list .item .content .des {
-  width: 90%;
-  font-size: 12px;
-  transition: none !important;
-}
-
-.list .item .content{
-    transition: none !important;
+    width: 90%;
+    font-size: 12px;
   }
 
-.list .item .content .name {
-  transition: none !important;
-}
+  .arrows {
+    position: static;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
 }
 
 /* SOBRE NOSOTROS */
