@@ -528,6 +528,11 @@ nav ul li a:hover {
 
 /* Estilos específicos para iPhone pequeño (320px) */
 @media (max-width: 468px) {
+
+  .item .content{
+    transition: none !important;
+  }
+
   .Hero .carousel .list .item .content .des {
   width: 90%;
   font-size: 12px;
