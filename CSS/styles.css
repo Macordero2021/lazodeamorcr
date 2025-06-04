@@ -1669,10 +1669,15 @@ width: 250px;
 .product-brand {
   font-size: 13px;
   color: #888;
-  margin: 2px 0; /* <-- reduce el espacio vertical */
+  margin: 1px 0; /* <-- reduce el espacio vertical */
 }
 
-  
+.product-code{
+  font-size: 10px;
+  color: black;
+  margin: 2px 0; 
+}
+
   .product-price {
     font-size: 18px;
     font-weight: 700;
@@ -1682,7 +1687,7 @@ width: 250px;
   
   /* --- BUTTON --- */
   .buy-button {
-    margin-top: 8px;
+    margin-top: 4px;
     padding: 8px 0;
     background-color: #9278bb; 
     color: #fff;
