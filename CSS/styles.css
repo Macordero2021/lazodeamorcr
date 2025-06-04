@@ -534,11 +534,13 @@ nav ul li a:hover {
   transition: none !important;
 }
 
-.list .item .content{
+.list .item .content .title{
+  
     transition: none !important;
   }
 
 .list .item .content .name {
+  
   transition: none !important;
 }
 }
