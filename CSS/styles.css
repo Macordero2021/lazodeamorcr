@@ -120,7 +120,7 @@ nav ul li a:hover {
 @media (max-width: 900px) {
   .nav-content {
     position: absolute;
-    top: 102px;
+    top: 100px;
     left: 0;
     width: 95%;
     background: #d6deef;
@@ -136,8 +136,9 @@ nav ul li a:hover {
   }
 
   .logo-container img{
-    width: 70px;
-    height: 70px;
+    margin-left: auto;
+    width: 80px;
+    height: 80px;
   }
 
   nav ul {
@@ -150,6 +151,7 @@ nav ul li a:hover {
   nav ul li {
     width: 100%;
     border-top: 1px solid #ccc;
+    padding-top: 5px;
   }
 
   .hamburger {
