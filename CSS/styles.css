@@ -119,23 +119,24 @@ nav ul li a:hover {
 /* RESPONSIVE MENU */
 @media (max-width: 468px) {
   .nav-content {
+    margin: 0;
     position: absolute;
     top: 90px;
     left: 0;
-    width: 95%;
+    width: 100%; /* Cambiado de 95% a 100% */
     background: #d6deef;
     flex-direction: column;
     align-items: center;
     display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* opcional, mejora visual */
   }
 
   .nav-content.active {
     display: flex;
-    z-index: 1001; /* Asegúrate que sea más alto que el hero */
-    position: absolute;
+    z-index: 1001;
   }
 
-  .logo-container img{
+  .logo-container img {
     margin-left: auto;
     width: 80px;
     height: 80px;
@@ -166,6 +167,7 @@ nav ul li a:hover {
     width: auto;
   }
 }
+
 /* Fin del menú de navegación */
 
 
