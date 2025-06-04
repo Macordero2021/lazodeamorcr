@@ -1068,6 +1068,14 @@ width: 250px;
     animation: scroll 14s linear infinite;
   }
 
+  @media screen and (max-width: 768px) {
+    .plataformas {
+      margin-top: 0;
+      margin-bottom: 80px;
+    }
+
+  }
+
 
 
 /* SECTION INFORMACION*/
