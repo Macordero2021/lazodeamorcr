@@ -117,7 +117,7 @@ nav ul li a:hover {
 }
 
 /* RESPONSIVE MENU */
-@media (max-width: 900px) {
+@media (max-width: 460px) {
   .nav-content {
     position: absolute;
     top: 100px;
