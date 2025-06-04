@@ -966,6 +966,7 @@ width: 250px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    margin-top: 30px;
   }
 
   .list-style-one {
@@ -1020,6 +1021,7 @@ width: 250px;
     width: 100%;
     /*justify-content: center;*/
     margin-top: 70px;
+    margin-bottom: 70px;
   }
   
   .plataformas::before,
