@@ -535,15 +535,10 @@ nav ul li a:hover {
 }
 
 .list .item .content{
-  transition: none !important;
-  }
-
-.list .item .content .title{
-  transition: none !important;
+    transition: none !important;
   }
 
 .list .item .content .name {
-  
   transition: none !important;
 }
 }
