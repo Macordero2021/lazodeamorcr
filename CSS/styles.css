@@ -170,6 +170,8 @@ nav ul li a:hover {
 
 @media (max-width: 1024px) {
   .nav-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
     margin: 0;
     position: absolute;
     top: 90px;
@@ -1790,6 +1792,41 @@ width: 250px;
     min-width: 180px;
 }
 
+/* Etiqueta de liquidación sobre la imagen */
+.liquidacion-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e63946;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 5px;
+  z-index: 2;
+  display: none;
+}
+
+/* Mostramos la etiqueta solo si tiene data-liquidacion */
+.product-card[data-liquidacion] .liquidacion-label {
+  display: block;
+}
+
+/* Precios */
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.discounted-price {
+  color: #e63946;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
 #clearFilters {
   background-color: #6f6df4; /* Rojo suave */
   color: white;
@@ -1888,6 +1925,8 @@ width: 250px;
     padding: 10px;
   }
 }
+
+
 
 /* CONTACTANOS */
 
