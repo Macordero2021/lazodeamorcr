@@ -1932,6 +1932,7 @@ width: 250px;
 
 .contact-form-container {
   width: 100%;
+  height: 670px;
   display: flex;
   /* Alineamos los hijos en fila */
   align-items: stretch; /* hace que los hijos tengan la misma altura */
